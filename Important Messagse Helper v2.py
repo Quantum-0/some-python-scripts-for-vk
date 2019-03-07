@@ -5,8 +5,8 @@ import operator
 from time import  sleep
 
 # Авторизация
-vk_session = vk_api.VkApi('логин от вк', 'пароль')
-vk_session.auth()
+vk_session = vk_api.VkApi(token='Insert your token here')
+#vk_session.auth()
 vk = vk_session.get_api()
 me = vk_session.token['user_id']
 
